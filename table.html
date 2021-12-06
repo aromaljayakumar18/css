@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+table, td, th {
+border: 1px solid black;
+}
+
+table {
+  color: #636689;
+border-collapse: collapse;
+width: 100%;
+margin: 10px;
+}
+
+td {
+  color: #636689;
+height: 50px;
+vertical-align: bottom;
+}
+ i{
+    padding:15px;
+
+
+ }
+ div{
+  color: #636689;
+ }
+   .Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column {
+    display: table-cell;
+   /* background-color: red; /*Optional*/*/
+}
+.pagination {
+  display: inline-block;
+  margin-left: 1000px;
+}
+
+.pagination a {
+  color: #636689;
+  float:left;
+  padding: 8px 11px;
+  text-decoration: none;
+
+}
+
+.pagination a.active {
+  background-color: #52caf2;
+  color: white;
+  border-radius:90px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 100px;
+
+}
+</style>
+</head>
+<body style="margin: auto;">
+
+<div class="Row">
+    <div class="Column"><p> Show<select style="color:#636689;">
+    <option>5</option> 
+ </select>entries</p></div>
+    <div class="Column"><h1 > Customer <b> Details </b></h1></div>
+    <div class="Column"><i class="fa fa-search" aria-hidden="true"> <input type="" name="" placeholder="Search"></i>
+ </div>
+</div>
+
+ <!-- <h1 style="text-align: center;"> Customer Details</h1>
+   <p> Show<select>
+  <option>5</option> 
+ </select>entries</p>
+ <i style="position:relative;
+ width:140px;bottom: 65px;left: 70%" class="fa fa-search" aria-hidden="true"> search</i>
+  -->
+<table>
+  <tr>
+    <th>#</th>
+    <th>NAME <i class="fa fa-sort"></i> </th>
+    <th>ADDRESS</th>
+    <th>CITY <i class="fa fa-sort"></i> </th>
+    <th>PIN</th>
+    <th>COUNTRY <i class="fa fa-sort"></i> </th>
+    <th>ACTIONS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Berlin</td>
+    <td>Berlin Villa</td>
+    <td>Portland</td>
+    <td>67876</td>
+    <td>USA</td>
+    <td>
+      <i style="color: #00ffff;" class="fa fa-eye"></i>   
+      <i style="color: #ff9000;" class="fa fa-edit"></i>   
+      <i style="color: #ff0000;" class="fa fa-trash"></i> 
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Maria</td>
+    <td>M Villa</td>
+    <td>Berlin</td>
+    <td>13790</td>
+    <td>Germany</td>
+    <td>
+      <i style="color: #00ffff;" class="fa fa-eye"></i>   
+      <i style="color: #ff9000;" class="fa fa-edit"></i>   
+      <i style="color: #ff0000;" class="fa fa-trash"></i>
+    </td>
+  </tr>
+<tr>
+    <td>3</td>
+    <td>David</td>
+    <td>David Villa</td>
+    <td>Madrid</td>
+    <td>75689</td>
+    <td>Spain</td>
+    <td>
+      <i style="color: #00ffff;" class="fa fa-eye"></i>   
+      <i style="color: #ff9000;" class="fa fa-edit"></i>   
+      <i style="color: #ff0000;" class="fa fa-trash"></i>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Stalin</td>
+    <td>SS Villa</td>
+    <td>Paris</td>
+    <td>88856</td>
+    <td>France</td>
+    <td>
+      <i style="color: #00ffff;" class="fa fa-eye"></i>   
+      <i style="color: #ff9000;" class="fa fa-edit"></i>   
+      <i style="color: #ff0000;" class="fa fa-trash"></i>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Martin</td>
+    <td>RD Villa</td>
+    <td>Turin</td>
+    <td>78881</td>
+    <td>Italy</td>
+    <td>
+      <i style="color: #00ffff;" class="fa fa-eye"></i>   
+      <i style="color: #ff9000;" class="fa fa-edit"></i>   
+      <i style="color: #ff0000;" class="fa fa-trash"></i>
+    </td>
+  </tr>
+  </table>
+  <br>
+<a style=" color: #636689; margin: 10px;">show <b>5</b> out of <b>25</b> enteries</a>
+<p style="color: #636689;"></p>
+<div class="pagination">
+  <a href="#">previous</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="active">3</a>
+  <a href="#">4</a>
+  <a href="#">5 &nbsp;&nbsp;&nbsp;Next</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+    
